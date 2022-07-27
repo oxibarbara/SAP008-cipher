@@ -1,0 +1,31 @@
+html,
+body {
+  text-align: center;
+  font-family: courier New, sans-serif;
+  background-color: #9c75ba;
+  color: #fffcf6;
+  margin: 0px, 500px;
+}
+img {
+  box-shadow: 20px 2px 2px 1x #fffcf6;
+  margin-bottom: 20px;
+  max-width: 300px;
+}
+
+button {
+  border: 2px solid #3c6ca8;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  margin-top: 20px;
+  font-size: 20px;
+  background: transparent;
+  color: #fffcf6;
+}
+
+textarea {
+  border: 2px solid #3c6ca8;
+  border-radius: 3px;
+  margin-top: 100px;
+  font-size: 200px;
+  color: #3c6ca8;
+}

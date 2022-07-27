@@ -1,14 +1,39 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
-    <script src="index.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Cifra de César</title>
+
+  <link href="estilo.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="titulo">
+    <h1> Cifra de César </h1>
+  </div>
+
+  <img src="imglab/cadeado.png" alt="cadeado e senha" widh="30%" height="30%">
+
+  <div>
+    <input id="offset" type="number" placeholder=" Digite qual offset em que voce deseja cifrar/decifrar">
+  </div>
+
+  <button id="botaoEnviar">Enviar</button>
+
+  <div>
+    <textarea class="decifrarCifrar" type="text" placeholder=" Qual mensagem voce quer cifrar ou decifrar?">
+  </div>
+
+  <button id="botaoCifrar">Cifrar</button>
+
+  <button id="botaoDecifrar">Decifrar</button>
+
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <script src="script.js"> </script>
+
+</body>
+
 </html>
