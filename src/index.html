@@ -1,4 +1,3 @@
-!DOCTYPE html>
 <html>
 
 <head>
@@ -14,21 +13,18 @@
     <h1> Cifra de César </h1>
   </div>
 
-  <img src="imglab/cadeado.png" alt="cadeado e senha" widh="30%" height="30%">
+  <img src="imgLab/cadeado.png" alt="cadeado e senha" widh="30%" height="30%">
 
   <div>
-    <input id="offset" type="number" placeholder=" Digite qual offset em que voce deseja cifrar/decifrar">
+    <input id="offset" class="offset" type="number" placeholder="Numero do offset">
   </div>
-
-  <button id="botaoEnviar">Enviar</button>
 
   <div>
-    <textarea class="decifrarCifrar" type="text" placeholder=" Qual mensagem voce quer cifrar ou decifrar?">
+    <textarea id="texto" class="texto" type="text" placeholder="Mensagem que quer cifrar ou decifrar"> </textarea>
   </div>
 
-  <button id="botaoCifrar">Cifrar</button>
-
-  <button id="botaoDecifrar">Decifrar</button>
+  <button id="botaoCifrar" class="botaoCifrar">Cifrar</button>
+  <button id="botaoDecifrar" class="botaoDecifrar">Decifrar</button>
 
   <link href="style.css" rel="stylesheet" type="text/css" />
 
