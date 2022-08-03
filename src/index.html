@@ -5,7 +5,7 @@
 
   <title>Cifra de César</title>
 
-  <link href="estilo.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -16,21 +16,20 @@
   <img src="imgLab/cadeado.png" alt="cadeado e senha" widh="30%" height="30%">
 
   <div>
-    <input id="offset" class="offset" type="number" placeholder="Numero do offset">
+    <input id="offset" class="offset" type="text" placeholder="Numero do offset">
   </div>
 
   <div>
-    <textarea id="mensagem" class="texto" type="text" placeholder="Mensagem que você quer cifrar ou decifrar"> </textarea>
+    <textarea id="text" class="text" type="text" placeholder="Mensagem que você quer cifrar ou decifrar"> </textarea>
+    <span id="txtResultado"></span>
   </div>
 
-  <form>
-    <button id="txtEncode" class="txtEncode">Cifrar</button>
-    <button id="txtDecode" class="txtDecode">Decifrar</button>
-  </form>
+  <div>
+    <button id="btnEncode" class="txtEncode">Cifrar</button>
+    <button id="btnDecode" class="txtDecode">Decifrar</button>
+  </div>
 
-  <link href="style.css" rel="stylesheet" type="text/css" />
-
-  <script src="index.js"> </script>
+  <script src="index.js" type="module"> </script>
 
 </body>
 

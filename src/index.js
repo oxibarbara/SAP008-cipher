@@ -1,36 +1,45 @@
-import cipher from './cipher.js';
+import cipher from "./cipher.js";
 
-const txtEncode = document.getElementById("textoCodificado")
-const txtDecode = document.getElementById("textoDescodificado")
+const btnEncode = document.getElementById("btnEncode");
+const btnDecode = document.getElementById("btnDecode");
 
-txtEncode.addEventListener("keyup" , (  ) => {
-  let text = document.getElementById("txtCodificafado").value;
-  let offset = perseInt(document.getElementById("inpkey").value);
-  let code = cipher.encode(offset,text);
-  const res = document.getElementById("textoDescodificafado");
+btnEncode.addEventListener("click", () => {
+  if (!mensagemEhValida()) {
+    return;
+  }
+  let text = document.getElementById("text").value;
+  let offset = parseInt(document.getElementById("offset").value);
+  let code = cipher.encode(offset, text);
+  const res = document.getElementById("txtResultado");
   res.innerHTML = code;
 });
 
-txtDecode.addEventListener("keyup" , ( ) => {
-  let text = document.getElementById("textoDescodificafado").value;
-  let offset = perseInt(document.getElementById("inpkey").value);
-  let code = cipher.decode(offset,text);
-  const res = document.getElementById("textoCodificafado")
+btnDecode.addEventListener("click", () => {
+  if (!mensagemEhValida()) {
+    return;
+  }
+  let text = document.getElementById("text").value;
+  let offset = parseInt(document.getElementById("offset").value);
+  let code = cipher.decode(offset, text);
+  const res = document.getElementById("txtResultado");
+  res.innerHTML = code;
 });
-
 
 /*
 botaoDecifrar.addEventListener("click", function encode(texto, offset){
   const texto= mensagem
 })*/
 
-documento.getElementById("botaoCifrar").addEventListener("click",validarMensagem )
-
-function validarMensagem() {
-  if (document.getElementById("botaoCifrar").value != " "&&
-  document.getElementById("botaDecifrar").value !=" " &&
-  document.getElementById("texto").value !=" "){
-    alert("Esta quase lá!")
-  }else{
-    alert("Por favor, preencha os campos offset e a mensagem");
+function mensagemEhValida() {
+  if (
+    document.getElementById("btnEncode").innerHTML != "" &&
+    document.getElementById("btnDecode").value != "" &&
+    document.getElementById("text").value != ""
+  ) {
+    alert("Esta quase lá!");
+    return true;
+  } else {
+    alert("Por favor, preencha os campos offset e mensagem");
+    return false;
   }
+}
