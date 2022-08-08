@@ -1,9 +1,12 @@
 html,
 body {
+  border: 2px #3c6ca8;
   text-align: center;
   font-family: courier New, sans-serif;
   background-color: #9c75ba;
   color: #fffcf6;
+  height: 80vh;
+  position: relative;
 }
 img {
   box-shadow: 20px 2px 2px 1x #fffcf6;
@@ -42,4 +45,11 @@ h1 {
   margin-top: 50px;
   font-size: 50px;
   color: #fffcf6;
+}
+.txtResultado {
+  border: 2px solid #3c6ca8;
+  border-radius: 3px;
+  margin-top: 50px;
+  font-size: 20px;
+  color: #3c6ca8;
 }

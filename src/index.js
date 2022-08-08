@@ -4,7 +4,7 @@ const btnEncode = document.getElementById("btnEncode");
 const btnDecode = document.getElementById("btnDecode");
 
 btnEncode.addEventListener("click", () => {
-  if (!mensagemEhValida()) {
+  if (mensagemEhValida()) {
     return;
   }
   let text = document.getElementById("text").value;
@@ -15,7 +15,7 @@ btnEncode.addEventListener("click", () => {
 });
 
 btnDecode.addEventListener("click", () => {
-  if (!mensagemEhValida()) {
+  if (mensagemEhValida()) {
     return;
   }
   let text = document.getElementById("text").value;
@@ -25,14 +25,9 @@ btnDecode.addEventListener("click", () => {
   res.innerHTML = code;
 });
 
-/*
-botaoDecifrar.addEventListener("click", function encode(texto, offset){
-  const texto= mensagem
-})*/
-
 function mensagemEhValida() {
   if (
-    document.getElementById("btnEncode").innerHTML != "" &&
+    document.getElementById("btnEncode").value != "" &&
     document.getElementById("btnDecode").value != "" &&
     document.getElementById("text").value != ""
   ) {
